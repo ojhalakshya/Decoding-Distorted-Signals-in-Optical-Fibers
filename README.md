@@ -20,3 +20,10 @@ Non-Return-to-Zero (NRZ) line code is a binary code in which ones are represente
 Pulse-amplitude modulation (PAM), is a form of signal modulation where the message information is encoded in the amplitude of a series of signal pulses. It is an analog pulse modulation scheme in which the amplitudes of a train of carrier pulses are varied according to the sample value of the message signal. Demodulation is performed by detecting the amplitude level of the carrier at every single period. 
 The number of possible pulse amplitudes in analog PAM is theoretically infinite. Digital PAM reduces the number of pulse amplitudes to some power of two. For example, in 4-level PAM there are  2^{2} possible discrete pulse amplitudes; in 8-level PAM there are 2^{3} possible discrete pulse amplitudes; and in 16-level PAM there are 2^{4} possible discrete pulse amplitudes.
 
+## The First Model : Dilated CNN for decoding the model.
+
+
+
+## Training the model
+
+## Results :
