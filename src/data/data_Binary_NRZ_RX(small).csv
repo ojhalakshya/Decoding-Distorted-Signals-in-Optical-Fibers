@@ -3,7 +3,7 @@
 ,,
 //TRACE,Waveform,Input 1 
 //SampledBand,,
-#Time,Electrical Signal,
+#Time,ElectricalSignal,
 #(ns),(a.u.),
 0,0.000518364,
 0.0025,0.000541526,
