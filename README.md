@@ -22,8 +22,14 @@ The number of possible pulse amplitudes in analog PAM is theoretically infinite.
 
 ## The First Model : Dilated CNN for decoding the model.
 
+We use 1D dilated causal convolutions. The following text below goes into details about convolution and pooling layers. More details can be found on them on either `nn.docs` or `tf.docs`.
 
+The `dilated_neural_network.py` file consists the model required for decoding the noisy signal.
 
 ## Training the model
 
+We use the `train_model.py` file to train the model. To read how the model is trained and weights are updated, I highly suggest looking into Andrej Karpathy's talk about backpropogation. However the presenter of this project will go into the details as required.
+
 ## Results :
+
+We are able to recover the message signal with less than 2% loss of information. The below graph shows the training logs of the model.

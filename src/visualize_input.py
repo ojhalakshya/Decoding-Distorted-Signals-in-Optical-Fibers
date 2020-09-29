@@ -9,7 +9,7 @@ if (query == 'NRZ') :
 else :
 	path = "./data/data_PAM4_RX(small).csv"
 
-data = np.genfromtxt('src/data/data_Binary_NRZ_RX(small).csv', delimiter=',', names=['Time', 'ElectricalSignal'])
+data = np.genfromtxt(path, delimiter=',', names=['Time', 'ElectricalSignal'])
 plt.plot(data['Time'], data['ElectricalSignal'])
 plt.xlabel('Time')
 plt.ylabel('Electrical Signal')
