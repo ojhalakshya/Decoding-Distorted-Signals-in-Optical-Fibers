@@ -7,6 +7,8 @@ This project is part of the term project for Optical Communication.
 
 Let's consider a simple baseband signal as shown below. This is the data that we use for training the model. We use this input signal and convert it to an encoded form such as Binary NRZ or 4-PAM. We also add to noise to these signals to simulate optical behavior. The model is then trained to reproduce the orignal signal with the noisy encoded signal as input.
 
+![Input Noisy Signal](images/input_noisy_signal.png)
+
 ## Simulating the Optical Channel and encoding the signal.
 
 For getting the required signal, we will the use the code available in `generate_labels.m`. As the name suggests, It will take a user input i.e. one of NRZ or PAM4 and will convert the input files (data mentioned above) into desired labels. Read the content below to understand NRZ and PAM encoding.
@@ -26,10 +28,30 @@ We use 1D dilated causal convolutions. The following text below goes into detail
 
 The `dilated_neural_network.py` file consists the model required for decoding the noisy signal.
 
+![Dilated Convolution](images/dilated_conv.png)
+![Explantation](images/explanation_1.png)
+![Pooling Layer](images/pooling_layer.png)
+
 ## Training the model
 
 We use the `train_model.py` file to train the model. To read how the model is trained and weights are updated, I highly suggest looking into Andrej Karpathy's talk about backpropogation. However the presenter of this project will go into the details as required.
 
+Run the following commands
+```
+# Train the model.
+python3 train_model.py (Input = {NRZ / PAM})
+# Visualize the results.
+tensorboard --logdir=/tmp/dilated_cnn_model_binary # Or whatever directory you use.
+```
 ## Results :
 
 We are able to recover the message signal with less than 2% loss of information. The below graph shows the training logs of the model.
+
+#### Training Results
+
+![Training Results](images/train_loss.png)
+
+#### Validation Results
+
+
+![Validation Results](images/val_loss.png)
