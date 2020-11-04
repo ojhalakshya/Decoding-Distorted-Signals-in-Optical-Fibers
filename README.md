@@ -55,3 +55,44 @@ We are able to recover the message signal with less than 2% loss of information.
 
 
 ![Validation Results](images/val_loss.png)
+
+## Second Model : Support Vector Machine (SVM)
+
+* Support vector machine (SVM) can be used for both regression and classification tasks. But it is widely used in classification tasks.
+
+* SVM works on regression and classification based on **Hyper Planes and Support vectors**. 
+
+### Classification
+In SVM our objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes.
+
+![SVM](https://miro.medium.com/max/363/0*9jEWNXTAao7phK-5.png)      ![svm](https://miro.medium.com/max/363/0*0o8xIA4k3gXUDCFU.png)
+
+* **Hyperplanes** are decision boundaries that help classify the data points. Data points falling on either side of the hyperplane can be attributed to different classes.
+
+* **Support vectors** are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane.
+
+### Regression
+For regression tasks the SVM linearly trains to develop Hyper-Planes of maximum margin in which all the linear data can be found.
+<img src = "https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/SVR1.png" height = 300>
+
+* By improving the maximum-margin the prediction task is improved greatly and hence reducing loss in prediction.
+
+### Loss Function : Hinge Loss
+
+* **Hinge loss** is a *loss function* used for training classifiers. The hinge loss is used for "maximum-margin" classification, most notably for support vector machines (SVMs).
+
+* We have the piece-wise form of the Hinge Loss function as:
+<img src = "https://miro.medium.com/max/536/1*3xErahGeTFnbDiRuNXjAuA.png" height = 80>
+
+### Training
+
+<img src = "images/svm.png">
+<img src = "images/svm_prediction.png">
+
+### Results
+
+<img src = "https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Line-Plots-of-Cross-Entropy-Loss-and-Classification-Accuracy-over-Training-Epochs-on-the-Blobs-Multi-Class-Classification-Problem.png">
+
+### Summary
+
+Using SVM for linear regression training can give accuracy of more then 0.8988.
