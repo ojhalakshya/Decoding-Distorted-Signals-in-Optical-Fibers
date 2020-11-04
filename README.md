@@ -87,6 +87,7 @@ For regression tasks the SVM linearly trains to develop Hyper-Planes of maximum 
 ### Training
 
 <img src = "images/svm.png">
+<<<<<<< HEAD
 <img src = "images/svm_prediction.png">
 
 ### Results
@@ -96,3 +97,6 @@ For regression tasks the SVM linearly trains to develop Hyper-Planes of maximum 
 ### Summary
 
 Using SVM for linear regression training can give accuracy of more then 0.8988.
+=======
+<img src = "images/svm_prediction.png">
+>>>>>>> adding SVM readme
